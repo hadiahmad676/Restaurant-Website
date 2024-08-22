@@ -1,0 +1,630 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    font-family: "Josefin Sans", sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+}
+
+/*Nav Bar Starts*/
+.nav-container {
+    background-color: rgb(0, 77, 37);
+    padding: 15px;
+}
+
+.nav-header {
+    padding-top: 10px;
+}
+
+.nav-header a {
+    font-size: 32px;
+    margin-left: 120px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(251, 224, 174);
+    cursor: pointer;
+}
+
+.nav-links ul {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 120px;
+    list-style-type: none;
+    padding-top: 8px;
+}
+
+.nav-links ul li {
+    margin-right: 70px;
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: -45px;
+}
+
+.nav-links ul li:hover {
+    opacity: 0.4;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+.links2 a {
+    text-decoration: none;
+    color: rgb(251, 224, 174);
+}
+
+#menu {
+    position: absolute;
+    color: whitesmoke;
+    font-size: 32px;
+    top: 20px;
+    right: 90px;
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 990px) {
+
+    .nav-header a {
+        font-size: 30px;
+        margin-left: 20px;
+    }
+
+    .nav-links {
+        height: 350px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 205px;
+        display: none;
+    }
+
+    .links2 {
+        flex-direction: column;
+    }
+
+    .active {
+        display: flex;
+    }
+
+    .nav-links ul li{
+        font-size: 30px;
+        padding: 60px;
+    }
+
+    #menu {
+        display: block;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .nav-header a {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+    .nav-links ul li {
+        font-size: 20px;
+    }
+
+    #menu {
+        right: 50px;
+        top: 15px;
+    }
+}
+
+/*Nav Bar End*/
+
+/*Restaurant Picture Start*/
+.first-div {
+    height:600px;
+    width: 100%;
+    background-color: rgb(251, 224, 174);
+}
+
+.first-div img {
+    display: block;
+    width: 70%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 990px) {
+    .first-div {
+        height: 500px;
+    }
+}
+
+@media (max-width: 800px) {
+    .first-div {
+        height: 400px;
+    }
+}
+
+@media (max-width: 700px) {
+    .first-div {
+        height: 400px;
+    }
+}
+
+@media (max-width: 670px) {
+    .first-div {
+        height: 300px;
+    }
+}
+
+@media (max-width: 500px) {
+    .first-div {
+        height: 250px;
+    }
+}
+/*Restaurant Picture End*/
+
+/*About Us Start*/
+.ab-section {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 50px;
+}
+
+.about-us {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.content-section {
+    float: left;
+    width: 50%;
+}
+
+.image-section {
+    float: right;
+    width: 50%;
+    height: 50%;
+    padding-bottom: 70px;
+}
+
+.image-section img {
+    width: 100%;
+    margin-top: -20px;
+}
+
+.content-section .title {
+    text-transform: uppercase;
+    font-size: 26px;
+    margin-bottom: 30px;
+    color: rgb(251, 224, 174);
+}
+
+.content-section .about-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 10px;
+    width: 77%;
+}
+
+@media screen and (max-width: 1100px) {
+    .image-section img {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .about-us {
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+    }
+
+    .ab-section {
+        width: 100%;
+        min-height: 80vh;
+        padding-top: 25px;
+    }
+
+    .content-section {
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    .image-section {
+        float: none;
+        width: 100%;
+    }
+
+    .image-section img {
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .content-section .title {
+        font-size: 18px;
+    }
+
+    .about-content {
+        width: auto;
+    }    
+
+    .about-content p {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .content-section .about-content p {
+        width: 100%;
+    }
+
+    .title h1 {
+        text-align: center;
+    }
+
+}
+/*About Us End*/
+
+/*Slider Start*/
+.slider {
+    height: 100vh;
+    background-color: rgb(0, 77, 37);
+}
+
+.slider h1 {
+    text-transform: uppercase;
+    font-size: 44px;
+    text-align: center;
+    padding-top: 130px;
+    margin-bottom: -45px;
+    color: rgb(251, 224, 174);
+}
+
+.slider-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+}
+
+.slider-arrows {
+    color: rgb(251, 224, 174);
+    font-size: 40px;
+}
+
+.slider-main {
+    width: 900px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.slider-main div {
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+
+.slider-main div img {
+    width: 100%;
+}
+
+.slider-main::-webkit-scrollbar {
+    display: none;
+}
+
+#backBtn, #nextBtn {
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+}
+
+.slider-main div img:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease-in;
+}
+
+.gallery-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-top: -70px;
+
+}
+
+.gallery-btn button {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgb(251, 224, 174);
+    border-radius: 5px;
+}
+
+.gallery-btn button:hover {
+    color: rgb(0, 77, 37);
+    padding: 12px;
+    transition: 0.2s ease-in;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .slider h1 {
+        font-size: 30px;
+        padding-top: 90px;
+    }
+
+    .slider-main div {
+        grid-gap: 10px;
+        padding: 5px;
+        margin-top: 30px;
+    }
+
+    #backBtn, #nextBtn {
+        margin: 35px 20px 20px;
+    }
+    
+    .slider {
+        height: 70vh;
+    }
+
+    .gallery-btn {
+        margin-top: -10px;
+        margin-bottom: 30px;
+    
+    }
+    
+    .gallery-btn button {
+        font-size: 16px;
+        padding: 7px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .slider {
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .slider {
+        height: 55vh;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .slider {
+        height: 50vh;
+    }
+}
+
+/*Slider End*/
+
+/*Contact Us Start*/
+.form-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form {
+    width: 700px;
+    padding: 20px;
+    border-radius: 4px;
+    font-size: 24px;
+    margin-bottom: -30px;
+}
+
+#form h1 {
+    color: rgb(251, 224, 174);
+    text-align: center;
+    font-size: 44px;
+    margin-top: -15px;
+    margin-bottom: 35px;
+}
+
+#form button {
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+    color: rgb(251, 224, 174);
+    background-color: rgb(0, 77, 37);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#form button:hover{
+    background-color: rgb(251, 224, 174);
+    color: black;
+    transition: 0.2s;
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control label {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.input-control input {
+    height: 28px;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: green;
+}
+
+.input-control.error input {
+    border-color: red;
+}
+
+.input-control .error {
+    color: red;
+    font-size: 14px;
+    height: 13px;
+    margin-top: 6px;
+}
+
+@media screen and (max-width: 1000px) {
+    #form h1 {
+        font-size: 38px;
+        margin-top: -100px;
+    }
+
+    #form {
+        font-size: 18px;
+    }
+}
+/*Contact Us End*/
+
+/*Scroll Start*/
+.scroll-top {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    padding: 10px 15px;
+    right: 30px;
+    background-color: rgb(251, 224, 174);
+    color: rgb(0, 77, 37);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5 ease 0.5;
+}
+
+.scroll-top ion-icon {
+    font-size: 18px;
+}
+/*Scroll End*/
+
+/*Footer Start*/
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 77, 37);
+}
+
+.footer-container h2{
+    font-size: 16px;
+    color: rgb(251, 224, 174);
+    margin-right: 10px;
+}
+
+.footer-container a {
+    color: rgb(251, 224, 174);
+    text-decoration: none;
+    padding: 8px;
+}
+
+.footer-container a:hover {
+    color: black;
+    transition: 0.25s;
+}
+
+@media screen and (max-width: 1000px) {  
+    .footer-container h2{
+        font-size: 14px;
+        text-align: center;
+}}
+/*Footer End*/
+
+
+/*Menu Page Start*/
+.menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+}
+
+.menu-header {
+    color: rgb(251, 224, 174);
+    text-align: center;
+    font-size: 44px;
+    margin: 100px 0 35px 0;
+}
+
+.menu-container img {
+    width: 80%;
+    height: 80%;
+}
+
+@media screen and (max-width: 1000px) {
+    .menu-container {
+        height: 80vh;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .menu-container {
+        height: 50vh;
+        margin-top: 90px;
+        margin-bottom: 110px;
+    }
+    
+    .menu-header {
+        font-size: 38px;
+        margin: 70px 0 -50px 0;
+    }
+}
+/*Menu Page End*/
+
+/*Gallery Start*/
+.gallery-main {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 10px;
+}
+
+.gallery-header {
+    color: rgb(251, 224, 174);
+    text-align: center;
+    font-size: 44px;
+    margin: 100px 0;
+}
+
+.gallery-main img {
+    width: 370px;
+    height: 370px;
+    border-radius: 4px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.gallery-main img:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 700px) {
+    .gallery-header {
+        font-size: 38px;
+        margin: 80px 0 -50px 0;
+    }
+}
+/*Gallery End*/
