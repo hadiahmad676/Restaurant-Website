@@ -34,8 +34,7 @@ nextBtn.addEventListener("click", () => {
 const form = document.getElementById('form');
 const fullname = document.getElementById('fullname');
 const email = document.getElementById('email');
-const password = document.getElementById('password');
-const password2 = document.getElementById('password2');
+const number = document.getElementById('number');
 
 form.addEventListener('submit', e => {
     e.preventDefault();
@@ -69,8 +68,7 @@ const isValidEmail = email => {
 const validateInputs = () => {
     const fullnameValue = fullname.value.trim();
     const emailValue = email.value.trim();
-    const passwordValue = password.value.trim();
-    const password2Value = password2.value.trim();
+    const numberValue = number.value.trim();
 
     if(fullnameValue === '') {
         setError(fullname, 'Full Name is required');
@@ -86,22 +84,11 @@ const validateInputs = () => {
         setSuccess(email);
     }
 
-    if(passwordValue === '') {
-        setError(password, 'Password is required');
-    } else if (passwordValue.length < 8 ) {
-        setError(password, 'Password must be at least 8 character.')
+    if(numberValue === '') {
+        setError(number, 'Phone Number is required');
     } else {
-        setSuccess(password);
+        setSuccess(number);
     }
-
-    if(password2Value === '') {
-        setError(password2, 'Please confirm your password');
-    } else if (password2Value !== passwordValue) {
-        setError(password2, "Password does not match");
-    } else {
-        setSuccess(password2);
-    }
-
 };
 /*Form End*/
 
